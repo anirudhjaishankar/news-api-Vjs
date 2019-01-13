@@ -1,4 +1,9 @@
-var url = 'https://newsapi.org/v2/everything?q=cricket&apiKey=9e32519c216c44fdbd894c162382cdb6';
+var date = new Date();
+var day = date.getDate();
+var month = date.getMonth()+1;
+var year = date.getFullYear();
+var today = year+"-"+month+"-"+day;
+var url = 'https://newsapi.org/v2/everything?q=cricket&from='+today+'&to='+today+'&apiKey=9e32519c216c44fdbd894c162382cdb6';
 var req = new Request(url);
 $(document).ready(function(){
   let a;
