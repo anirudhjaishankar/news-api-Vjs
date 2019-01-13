@@ -13,7 +13,7 @@ $(document).ready(function(){
           a.then(function(obj){
             // console.log(obj.articles[0]);
             for(var i=0;i<20;i++){
-                $("#box").append("<div class='box'><div class='columns'><div class='column'><img src=" + obj.articles[i].urlToImage +"></div><div class='column'><h1 class='title is-3'>" + obj.articles[i].title + "</h1><p>" + obj.articles[i].description+ "</p><a href='" + obj.articles[i].url + "'></a></div></div></div>");
+                $("#box").append("<div class='box'><div class='columns'><div class='column'><img src=" + obj.articles[i].urlToImage +"></div><div class='column'><a href='" + obj.articles[i].url + "'><h1 class='title is-4'>" + obj.articles[i].title + "</h1></a><p>" + obj.articles[i].description+ "</p></div></div></div>");
                 // console.log(obj['articles'][i]);
               }
             });
